@@ -1,0 +1,11 @@
+server:
+  port: 8100
+
+spring:
+  application:
+    name: eureka-consumer
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://eureka-server:8761/eureka
