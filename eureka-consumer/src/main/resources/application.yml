@@ -5,7 +5,18 @@ spring:
   application:
     name: eureka-consumer
 
+  datasource:
+    # mysql数据源
+    url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
 eureka:
   client:
     service-url:
-      default-zone: http://eureka-server:8761/eureka
+      default-zone: http://eureka-server:8761/eureka/
+
+
+tx-lcn:
+  client:
+    manager-address: 127.0.0.1:8070
